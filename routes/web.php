@@ -2,10 +2,15 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+//blog.test => welcome (devuelve la vista welcome.blade.php)
+Route::view('/','welcome');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//blog.test/contacto = contact (devuelve la vista contact.blade.php)
+Route::view('/contacto','contact');
+//blog.test/blog => blog (devuelve la vista blog.blade.php)
+Route::view('/blog','blog');
+//blog.test/blog/nosotros => about (devuelve la vista about.blade.php)
+Route::view('/nosotros','about');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
