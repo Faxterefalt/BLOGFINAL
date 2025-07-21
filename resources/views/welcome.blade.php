@@ -1,7 +1,7 @@
-<x-layout meta-title="Inicio Home" meta-description="Home description">
+<x-layout meta-title="Inicio" meta-description="Home description">
     <h1>INICIO</h1>
 
-    <x-slot:sidebar>
+    {{-- <x-slot:sidebar>
      Home Sidebar
-    </x-slot:sidebar>
+    </x-slot:sidebar> --}}
 </x-layout>
