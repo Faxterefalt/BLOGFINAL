@@ -1,8 +1,12 @@
 <?php
+
 namespace App\Http\Controllers;
-class PostController
+
+use Illuminate\Http\Request;
+
+class PostController extends Controller
 {
-    public function __invoke()
+    public function index()
     {
         $posts = [
         ['title'=>'First Post'],
