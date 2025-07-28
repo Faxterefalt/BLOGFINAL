@@ -9,7 +9,7 @@
     <meta name="description" content="{{ $metaDescription ?? 'Default description' }}">
 </head>
 <body>
-@include('partials.navigation')
+<x-navigation />
     @session('status')
     <div>
     {{ $value }}
